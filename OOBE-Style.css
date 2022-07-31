@@ -1,0 +1,210 @@
+body {
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+    transition: all 2s ease;
+  }
+  ::-webkit-scrollbar-track:hover {
+      background-color: whitesmoke;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  ::-webkit-scrollbar-button {
+      border-radius: 50%;
+      height: 5px;
+      width: 5px;
+  }
+  ::-webkit-scrollbar-button:single-button {
+    border-width: 0 8px 8px 8px;
+    border-color: transparent transparent #555555 transparent;
+  }
+  
+  ::-webkit-scrollbar-button:single-button:hover {
+    border-color: transparent transparent #777777 transparent;
+  }
+  /* Down */
+  ::-webkit-scrollbar-button:single-button {
+    border-width: 8px 8px 0 8px;
+    border-color: #555555 transparent transparent transparent;
+  }
+  
+  ::-webkit-scrollbar-button:vertical:hover {
+    border-color: #777777 transparent transparent transparent;
+  }
+.oobewin {
+    height: 768px;
+    width: 1366px;
+    background-attachment: fixed;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    background-image: linear-gradient(5deg, rgb(215, 194, 248), rgb(199, 193, 255), rgb(255, 255, 255));
+}
+.oobewin .region {
+    height: 695px;
+    width: 1290px;
+    position: absolute;
+    top: 27px;
+    border-radius: 10px;
+    background-image: linear-gradient(150deg , rgba(255, 255, 255, 0.753) , rgba(221, 228, 252, 0.753), rgba(255, 236, 255, 0.753));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.oobewin .region .img {
+    height: 100%;
+    width: 600px;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    place-content: center;
+    align-items: center;
+}
+.oobewin .region .img img {
+    height: 190px;
+    width: auto;
+    animation: runs 0.5s linear;
+}
+@keyframes runs {
+    0% {
+        height: 10px;
+    }
+    25% {
+        height: 60px;
+    }
+    50% {
+        height: 100px;
+    }
+    75% {
+        height: 140px;
+    }
+    100% {
+        height: 190px;
+    }
+}
+
+.region .promt {
+    height: 100%;
+    width: 650px;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.prreg {
+    font-size: large;
+}
+
+.selectionreg {
+    height: 70%;
+    width: 390px;
+    background-color: transparent;
+    position: absolute;
+    top: 135px;
+    right: 150px;
+    overflow-x: hidden;
+}
+
+.opt1s {
+    width: 95%;
+    height: 50px;
+    background: transparent;
+    border-radius: 6px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.opt1s:hover {
+    background: rgb(156, 156, 156);
+}
+
+
+.opt1s:visited {
+    background: blue;
+}
+.opt1s:focus {
+    background: blue;
+}
+.opt1s:active {
+    background: #0077db;
+}
+.btn1fr {
+    height: 35px;
+    width: 80px;
+    background: #0077db;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    position: absolute;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    bottom: 40px;
+    right: 100px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.btn1fr:hover {
+    background: #2288db;
+}
+
+.loader1 {
+    height: 695px;
+    width: 1290px;
+    position: absolute;
+    top: 27px;
+    border-radius: 10px;
+    background-image: linear-gradient(150deg , rgba(255, 255, 255, 0.753) , rgba(221, 228, 252, 0.753), rgba(255, 236, 255, 0.753));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    place-content: center;
+    align-items: center;
+}
+.loader1 .round {
+    height: 80px;
+    width: 80px;
+    background-color: transparent;
+    border-radius: 50%;
+    border-top: 7px solid #0077db;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom: 7px solid white;
+    border-left: 7px solid white;
+    border-right: 7px solid white;
+    animation: spin1 0.8s linear infinite;
+}
+@keyframes spin1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

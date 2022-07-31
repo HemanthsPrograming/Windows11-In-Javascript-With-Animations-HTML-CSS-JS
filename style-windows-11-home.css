@@ -1,0 +1,1837 @@
+body {
+    background-image: url("WIN11.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Segoe UI',Verdana, sans-serif;
+    overflow: hidden;
+}
+
+.tskbar {
+  height: 35px;
+  width: 1366px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.726);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  place-content: center;
+  align-items: center;
+}
+
+
+#loading {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  opacity: 0.7;
+  background-color: #fff;
+  z-index: 99;
+}
+
+#loading-image {
+  position: absolute;
+  top: 100px;
+  left: 240px;
+  z-index: 100;
+}
+
+ul {
+    list-style: none;
+  }
+  .context-menu { 
+    position: absolute; 
+  } 
+  .menu {
+    height: 400px;
+    width: 200px;
+    background-color: #fff;
+    border-radius: 7px;
+    color: blue;
+  }
+
+
+.cut i {
+  transform: rotate(270deg);
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.cut i:hover {
+  color: #000;
+}
+
+.copy i {
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 13px;
+  left: 50px;
+  color: red;
+}
+.copy i:hover {
+  color: #000;
+}
+
+.clipboard i {
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 13px;
+  left: 90px;
+}
+.clipboard i:hover {
+  color: #000;
+}
+.delete i {
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 11px;
+  left: 128px;
+  color: red;
+}
+.delete i:hover {
+  color: #000;
+}
+.share i {
+  font-size: 23px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 12px;
+  left: 160px;
+}
+.share i:hover {
+  color: #000;
+}
+
+.line {
+  height: 1px;
+  background-color: rgb(158, 157, 157);
+  width: 95%;
+  place-content: center;
+  position: absolute;
+  top: 44px;
+  left: 4.5px;
+}
+.open {
+  height: 35px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+.open i {
+  color: #0026ff;
+  font-size: 20px;
+  position: absolute;
+  left: 15px;
+}
+.open .opentext {
+  position: absolute;
+  left: 45px;
+}
+.open:hover {
+  background-color: rgb(201, 201, 201);
+}
+
+.openwith {
+  height: 35px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 90px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+.openwith i {
+  color: #0026ff;
+  font-size: 20px;
+  position: absolute;
+  left: 15px;
+}
+.openwith .openwithtext {
+  position: absolute;
+  left: 45px;
+}
+.openwith:hover {
+  background-color: rgb(201, 201, 201);
+}
+.zip {
+  height: 35px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 130px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+.zip i {
+  color: #0026ff;
+  font-size: 20px;
+  position: absolute;
+  left: 15px;
+}
+.zip .ziptext {
+  position: absolute;
+  left: 45px;
+}
+.zip:hover {
+  background-color: rgb(201, 201, 201);
+}
+
+
+  /*text*/
+  .menu > li > a {
+    font: inherit;
+    border: 1px solid grey;
+    padding: 5px 30px 10px 18px;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-decoration: unset;
+    color: #000;
+    font-weight: 500;
+    transition: 0.5s linear;
+    -webkit-transition: 0.5s linear;
+    -moz-transition: 0.5s linear;
+    -ms-transition: 0.5s linear;
+    -o-transition: 0.5s linear;
+  }
+  .menu > li > a:hover {
+    background:#f1f3f7;
+    color: #4b00ff;
+  }
+  .menu > li > a > i {
+    padding-right: 10px;
+  }
+  .menu > li.trash > a:hover {
+    color: red;
+  }
+
+.taskbar {
+    height: 35px;
+    width: 1365px;
+    background-color: rgb(255, 255, 255, 0.8);
+    float: bottom;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    backdrop-filter: blur(3px);
+}
+
+
+.taskbar .startbutton img{
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: -3px;
+  left: 410px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.startmenubtnback {
+  height: 45px;
+  width: 45px;
+  transition: all 0.2s ease;
+}
+.startmenubtnback:hover {
+  background: grey;
+}
+.startmenu {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: transparent; /* Fallback color */
+  background-color: transparent; /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+/* Modal Content */
+.start-content {
+  position: fixed;
+  bottom: 45px;
+  background-color: rgba(255, 255, 255, 0.712);
+  width: 38%;
+  height: 520px;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+  border-radius: 6px;
+  left: 426px;
+  backdrop-filter: blur(30px);
+  transition: all 0.5s linear bottom;
+  box-shadow: 0 0 0 0 black;
+  padding-right: 0.100px;
+  box-shadow: 0 0 4px 0 black;
+}
+
+/* The Close Button */
+.startmenuclose {
+  color: rgb(204, 204, 204);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.startmenuclose:hover,
+.startmenuclose:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {bottom: -300px; opacity: 0} 
+  to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+.pinned {
+  font-weight: 10px;
+  position: fixed;
+  top: 38px;
+  left: 50px;
+  font-size: 15px;
+  cursor: default;
+}
+.allapps button {
+  background-color: rgb(236, 230, 230);
+  border: 1px solid rgb(236, 230, 230);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  position: fixed;
+  top: 40px;
+  right: 50px;
+  opacity: 0.3px;
+  box-shadow: 0 0 2px black;
+}
+.allapps button:hover {
+  background-color: rgb(223, 217, 217);
+  border: 1px solid rgb(223, 217, 217);
+}
+.tiles .edge{
+  display: inline-block;
+  height: 60px;
+  width: 90px;
+  background-color: rgba(255, 255, 255, 0.233);
+  align-items: center;
+  position: fixed;
+  top: 90px;
+  left: 37px;
+  border-radius: 5px;
+  cursor: pointer;
+  place-items: center;
+  transition: all 0.3s ease;
+}
+.tiles .edge:hover {
+  background-color: rgba(255, 255, 255, 0.877);
+}
+:root {
+  --blurBg: #fcf9f79d;
+  --color: white;
+  --color-t: #ffffffd3;
+  --blurBg-b: #ffffff75;
+  --bg: rgb(218, 202, 202);
+}
+.tiles .edge img {
+  height: 33px;
+  width: 33px;
+  opacity: 0.9;
+  align-self: center;
+  position: fixed;
+  top: 95px;
+  left: 64px;
+}
+.tiles .edge .etext {
+  position: fixed;
+  font-size: 12px;
+  align-self: center;
+  top: 134px;
+  left: 41px;
+  cursor: default;
+}
+
+
+.tiles .mail{
+  display: inline-block;
+  height: 60px;
+  width: 90px;
+  background-color: rgba(255, 255, 255, 0.233);
+  align-items: center;
+  position: fixed;
+  top: 90px;
+  left: 150px;
+  border-radius: 5px;
+  cursor: pointer;
+  place-items: center;
+  transition: all 0.3s ease;
+}
+.tiles .mail:hover {
+  background-color: rgba(255, 255, 255, 0.877);
+}
+:root {
+  --blurBg: #fcf9f79d;
+  --color: white;
+  --color-t: #ffffffd3;
+  --blurBg-b: #ffffff75;
+  --bg: rgb(218, 202, 202);
+}
+.tiles .mail img {
+  height: 37px;
+  width: 37px;
+  opacity: 0.9;
+  align-self: center;
+  position: fixed;
+  top: 94px;
+  left: 177px;
+}
+.tiles .mail .mtext {
+  position: fixed;
+  font-size: 12px;
+  align-self: center;
+  top: 134px;
+  left: 185px;
+}
+.tiles .calender{
+  display: inline-block;
+  height: 60px;
+  width: 90px;
+  background-color: rgba(255, 255, 255, 0.233);
+  align-items: center;
+  position: fixed;
+  top: 90px;
+  left: 260px;
+  border-radius: 5px;
+  cursor: pointer;
+  place-items: center;
+  transition: all 0.3s ease;
+}
+.tiles .calender:hover {
+  background-color: rgba(255, 255, 255, 0.877);
+}
+:root {
+  --blurBg: #fcf9f79d;
+  --color: white;
+  --color-t: #ffffffd3;
+  --blurBg-b: #ffffff75;
+  --bg: rgb(218, 202, 202);
+}
+.tiles .calender img {
+  height: 37px;
+  width: 37px;
+  opacity: 0.9;
+  align-self: center;
+  position: fixed;
+  top: 94px;
+  left: 284px;
+}
+.tiles .calender .ctext {
+  position: fixed;
+  font-size: 12px;
+  align-self: center;
+  top: 134px;
+  left: 277px;
+}
+.tiles .store{
+  display: inline-block;
+  height: 60px;
+  width: 90px;
+  background-color: rgba(255, 255, 255, 0.233);
+  align-items: center;
+  position: fixed;
+  top: 90px;
+  left: 370px;
+  border-radius: 5px;
+  cursor: pointer;
+  place-items: center;
+  transition: all 0.3s ease;
+}
+.tiles .store:hover {
+  background-color: rgba(255, 255, 255, 0.877);
+}
+:root {
+  --blurBg: #fcf9f79d;
+  --color: white;
+  --color-t: #ffffffd3;
+  --blurBg-b: #ffffff75;
+  --bg: rgb(218, 202, 202);
+}
+.tiles .store img {
+  height: 37px;
+  width: 37px;
+  opacity: 0.9;
+  align-self: center;
+  position: fixed;
+  top: 94px;
+  left: 395px;
+}
+.tiles .store .stext {
+  position: fixed;
+  font-size: 12px;
+  align-self: center;
+  top: 134px;
+  left: 399px;
+}
+.tiles .msword{
+  display: inline-block;
+  height: 60px;
+  width: 90px;
+  background-color: rgba(255, 255, 255, 0.233);
+  align-items: center;
+  position: fixed;
+  top: 90px;
+  left: 150px;
+  border-radius: 5px;
+  cursor: pointer;
+  place-items: center;
+  transition: all 0.3s ease;
+}
+.tiles .msword:hover {
+  background-color: rgba(255, 255, 255, 0.877);
+}
+:root {
+  --blurBg: #fcf9f79d;
+  --color: white;
+  --color-t: #ffffffd3;
+  --blurBg-b: #ffffff75;
+  --bg: rgb(218, 202, 202);
+}
+.tiles .msword img {
+  height: 63px;
+  width: 63px;
+  opacity: 0.9;
+  align-self: center;
+  position: fixed;
+  top: 94px;
+  left: 177px;
+}
+.tiles .msword .wtext {
+  position: fixed;
+  font-size: 12px;
+  align-self: center;
+  top: 134px;
+  left: 185px;
+}
+
+.tiles .poweroff {
+  position: absolute;
+  bottom: 20px;
+  right: 25px;
+}
+.searchmenu {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: transparent; /* Fallback color */
+  background-color: transparent; /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+/* Modal Content */
+.search-content {
+  position: fixed;
+  bottom: 45px;
+  background-color: #f6f6f6;
+  width: 38%;
+  height: 500px;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+  border-radius: 6px;
+  left: 430px;
+}
+
+/* The Close Button */
+.searchmenuclose {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.searchmenuclose:hover,
+.searchmenuclose:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {bottom: -300px; opacity: 0} 
+  to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+.taskbar .searchbtn button{
+  font-size: 20px;
+  position: fixed;
+  bottom: 5.5px;
+  font-weight: 1px;
+  left: 447px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  background-color: transparent;
+  border: none;
+}
+.taskbar .taskview img {
+  height: 40px;
+  position: fixed;
+  left: 477px;
+  bottom: -1.5px;
+  cursor: pointer;
+}
+.taskbar .widget img {
+  position: fixed;
+  bottom: 2px;
+  height: 31px;
+  left: 516px;
+}
+.taskbar .edge img {
+  height: 23px;
+  position: fixed;
+  bottom: 6px;
+  left: 555px;
+}
+.edgedash {
+  font-size: 50px;
+  font-weight: 10;
+  position: fixed;
+  color: rgb(41, 41, 255);
+  top: 0;
+  left: 556px;
+  display: none;
+}
+.edgeshade {
+  background-color: rgba(176, 177, 250, 0.397);
+  height: 32px;
+  width: 35px;
+  position: fixed;
+  bottom: 0;
+  left: 550px;
+  display: none;
+}
+[id^=modal1] {
+  display: none;
+  border: none;
+  position: fixed;
+  left: 675px;
+  transform: translate(-50%,-50%);
+  height: 500px;
+  width: 500px;
+  bottom: 1px;
+  top: 470px;
+  background-color: var(--blurBg);
+  border-radius: 6px;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+  transition: all 0.5s linear bottom;
+  
+  }
+  :root {
+    --blurBg: #fcf9f79d;
+    --color: white;
+    --color-t: #ffffffd3;
+    --blurBg-b: #ffffff75;
+    --bg: rgb(218, 202, 202);
+  }
+  @-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+  }
+  
+  @keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+  }
+
+  [id^=modal2] {
+    display: none;
+    border: 1px solid red;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-height: 3em;
+    min-width: 5em;
+    max-width: 10em;
+    }
+input[type=checkbox] {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  }
+#modal1:target {
+  display: block;
+  }
+#modal2:target {
+  display: block;
+  }
+[id^=modal] a {
+  float: right;
+  color: #000;
+  }
+  a {
+    color: #000;
+  }
+
+  .edgewin {
+    height: 733px;
+    width: 1365px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  .edgewin .close {
+    height: 25px;
+    width: 40px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: all 0.2s ease;
+    font-size: 30px;
+    place-items: center;
+    align-items: center;
+    place-content: center;
+    align-content: center;
+    cursor: pointer;
+  }
+  .edgewin .close:hover {
+    background-color: red;
+    color: white;
+  }
+  .edgewin .close .iconx {
+    position: fixed;
+    top: -8px;
+    right: 14px;
+    cursor: pointer;
+  }
+  .edgewin .minimize {
+    height: 25px;
+    width: 40px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 80px;
+    transition: all 0.2s ease;
+    font-size: 30px;
+    place-items: center;
+    align-items: center;
+    place-content: center;
+    align-content: center;
+    cursor: pointer;
+    color: black;
+  }
+  .edgewin .minimize:hover {
+    background-color: grey;
+    color: white;
+  }
+  .edgewin .minimize .iconm {
+    position: fixed;
+    top: -8px;
+    right: 95px;
+    color: white;
+  }
+  .edgewin .maximize {
+    height: 25px;
+    width: 40px;
+    background-color: white;
+    color: #000;
+    position: fixed;
+    top: 0;
+    right: 40px;
+    transition: all 0.2s ease;
+    font-size: 30px;
+    place-items: center;
+    align-items: center;
+    place-content: center;
+    align-content: center;
+    cursor: pointer;
+  }
+  .edgewin .maximize:hover {
+    background-color: grey;
+    color: blanchedalmond;
+  }
+  .edgewin .maximize .iconmx {
+    color: #fff;
+    font-size: 14px;
+    position: fixed;
+    top: 5px;
+    right: 56px;
+  }
+
+  .tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+
+  .edgerestored {
+    height: 400px;
+    width: 700px;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    left: 50px;
+    resize: both;
+    overflow: auto;
+    min-width: 250px;
+    display: block;
+    border-radius: 10px;
+  
+  }
+  .edgerestored .closeedge {
+    height: 25px;
+    width: 40px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 0.2s ease;
+    font-size: 30px;
+    place-items: center;
+    align-items: center;
+    place-content: center;
+    align-content: center;
+    cursor: pointer;
+  }
+  .edgerestored .closeedge:hover {
+    background-color: red;
+    color: white;
+  }
+  .edgerestored .closeedge .iconrec {
+    position: absolute;
+    top: -8px;
+    right: 14px;
+    cursor: pointer;
+  }
+  .edgerestored .minimizeedge {
+    height: 25px;
+    width: 40px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 80px;
+    transition: all 0.2s ease;
+    font-size: 30px;
+    place-items: center;
+    align-items: center;
+    place-content: center;
+    align-content: center;
+    cursor: pointer;
+    color: black;
+  }
+  .edgerestored .minimizeedge:hover {
+    background-color: grey;
+    color: white;
+  }
+  .edgerestored .minimizeedge .iconremi {
+    position: absolute;
+    top: -8px;
+    right: 14px;
+    color: white;
+  }
+  .edgerestored .maximizeedge {
+    height: 25px;
+    width: 40px;
+    background-color: white;
+    color: #000;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    transition: all 0.2s ease;
+    font-size: 30px;
+    place-items: center;
+    align-items: center;
+    place-content: center;
+    align-content: center;
+    cursor: pointer;
+  }
+  .edgerestored .maximizeedge:hover {
+    background-color: grey;
+    color: blanchedalmond;
+  }
+  .edgerestored .maximizeedge .iconrema {
+    color: #000;
+    font-size: 14px;
+    position: absolute;
+    top: 5px;
+    right: 56px;
+  }
+
+  .tabs {
+    height: 100px;
+    width: 100%;
+    background-color:rgb(121, 120, 120);
+  }
+
+  .tab1 {
+    height: 30px;
+    width: 150px;
+    background-color: #fff;
+    color: black;
+    position: absolute;
+    top: 30px;
+    border-radius: 4px;
+    border:none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    place-items: center;
+    place-content: center;
+    align-items: center;
+  }
+  .tab1:hover {
+    background-color: rgb(179, 179, 179);
+  }
+  .tab2 {
+    height: 30px;
+    width: 180px;
+    background-color: rgb(201, 201, 201);
+    color: black;
+    position: absolute;
+    top: 30px;
+    left: 153px;
+    border-radius: 4px;
+    border:none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    place-items: center;
+    place-content: center;
+    align-items: center;
+  }
+  .tab2:hover {
+    background-color: rgb(179, 179, 179);
+  }
+
+  .tab3 {
+    height: 30px;
+    width: 180px;
+    background-color: rgb(201, 201, 201);
+    color: black;
+    position: absolute;
+    top: 30px;
+    left:336px;
+    border-radius: 4px;
+    border:none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    place-items: center;
+    place-content: center;
+    align-items: center;
+  }
+  .tab3:hover {
+    background-color: rgb(179, 179, 179);
+  }
+
+  .tab4 {
+    height: 30px;
+    width: 180px;
+    background-color: rgb(201, 201, 201);
+    color: black;
+    position: absolute;
+    top: 30px;
+    left: 520px;
+    border-radius: 4px;
+    border:none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    place-items: center;
+    place-content: center;
+    align-items: center;
+  }
+  .tab4:hover {
+    background-color: rgb(179, 179, 179);
+  }
+
+  .edgesearchbar input{
+    position: absolute;
+    height: 22px;
+    width: 70%;
+    left: 150px;
+    border-radius: 2px;
+    border: none;
+    top: 65px;
+  }
+  .cover {
+    height: 25px;
+    width: 91.3%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+  }
+  .edgebrowser {
+    height: 632px;
+    width: 100%;
+  }
+
+  /* mark one */
+  
+  .tabsr {
+    height: 100px;
+    width: 100%;
+    background-color:rgb(121, 120, 120);
+  }
+
+  .tab1r {
+    height: 30px;
+    width: 150px;
+    background-color: #fff;
+    color: black;
+    position: absolute;
+    top: 30px;
+    border-radius: 4px;
+    border:none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    place-items: center;
+    place-content: center;
+    align-items: center;
+  }
+  .tab1r:hover {
+    background-color: rgb(179, 179, 179);
+  }
+  .tab2r {
+    height: 30px;
+    width: 180px;
+    background-color: rgb(201, 201, 201);
+    color: black;
+    position: absolute;
+    top: 30px;
+    left: 153px;
+    border-radius: 4px;
+    border:none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    place-items: center;
+    place-content: center;
+    align-items: center;
+  }
+  .tab2r:hover {
+    background-color: rgb(179, 179, 179);
+  }
+
+  .tab3r {
+    height: 30px;
+    width: 180px;
+    background-color: rgb(201, 201, 201);
+    color: black;
+    position: absolute;
+    top: 30px;
+    left:336px;
+    border-radius: 4px;
+    border:none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    place-items: center;
+    place-content: center;
+    align-items: center;
+  }
+  .tab3r:hover {
+    background-color: rgb(179, 179, 179);
+  }
+
+  .tab4r {
+    height: 30px;
+    width: 180px;
+    background-color: rgb(201, 201, 201);
+    color: black;
+    position: absolute;
+    top: 30px;
+    left: 520px;
+    border-radius: 4px;
+    border:none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    place-items: center;
+    place-content: center;
+    align-items: center;
+  }
+  .tab4r:hover {
+    background-color: rgb(179, 179, 179);
+  }
+
+  .edgesearchbarr input{
+    position: absolute;
+    height: 22px;
+    width: 70%;
+    left: 150px;
+    border-radius: 2px;
+    border: none;
+    top: 65px;
+  }
+  .coverr {
+    height: 25px;
+    width: 91.3%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+  }
+  .edgebrowser {
+    height: 632px;
+    width: 100%;
+  }
+
+  .filewin {
+    height: 733px;
+    width: 1365px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+  .filewin .main {
+    height: 100px;
+    width: 1365px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(243, 243, 243);
+  }
+  .filewin .close {
+    height: 25px;
+    width: 40px;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: all 0.2s ease;
+    font-size: 30px;
+    place-items: center;
+    align-items: center;
+    place-content: center;
+    align-content: center;
+    cursor: pointer;
+  }
+  .filewin .close:hover {
+    background-color: red;
+    color: white;
+  }
+
+  .filewin .minimize {
+    height: 25px;
+    width: 40px;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    right: 80px;
+    transition: all 0.2s ease;
+    font-size: 30px;
+    place-items: center;
+    align-items: center;
+    place-content: center;
+    align-content: center;
+    cursor: pointer;
+    color: black;
+  }
+  .filewin .minimize:hover {
+    background-color: grey;
+    color: white;
+  }
+  .filewin .minimize .iconm {
+    position: fixed;
+    top: -8px;
+    right: 95px;
+    color: white;
+  }
+  .filewin .maximize {
+    height: 25px;
+    width: 40px;
+    background-color: transparent;
+    color: #000;
+    position: fixed;
+    top: 0;
+    right: 40px;
+    transition: all 0.2s ease;
+    font-size: 30px;
+    place-items: center;
+    align-items: center;
+    place-content: center;
+    align-content: center;
+    cursor: pointer;
+  }
+  .filewin .maximize:hover {
+    background-color: grey;
+    color: blanchedalmond;
+  }
+  .filewin .maximize .iconmx {
+    color: #fff;
+    font-size: 14px;
+    position: fixed;
+    top: 5px;
+    right: 56px;
+  }
+  .filewin .close .iconx {
+    position: fixed;
+    top: -8px;
+    right: 14px;
+    cursor: pointer;
+  }
+  .filewin .icon img {
+    height: 21px;
+    width: 21px;
+    top: 8px;
+    left: 10px;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  .filewin .label {
+    position: absolute;
+    top: 11px;
+    left: 43px;
+  }
+  
+  .filewin .new {
+    height: 35px;
+    width: 85px;
+    position: absolute;
+    top: 55px;
+    left: 25px;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+    word-spacing: 10cm;
+    letter-spacing: 1px;
+  }
+
+  .filewin .new:hover {
+    background-color: rgb(202, 202, 202);
+  }
+
+  .filewin .new .newbtn i {
+    position: absolute;
+    left: 8px;
+    top: 9px;
+  }
+  .filewin .new .newtext {
+    position: absolute;
+    left: 29px;
+    top: 9px;
+  }
+
+  .filewin .line {
+    height: 27px;
+    width: 1px;
+    background-color: rgb(141, 141, 141);
+    position: absolute;
+    top: 59px;
+    left: 120px;
+  }
+
+
+  .winbtnconmenu {
+    height: 500px;
+    width: 200px;
+    background-color: #ccc;
+    border-radius: 12px;
+    position: absolute;
+    bottom: 45px;
+    left: 500px;
+    display: none;
+    animation: 0.4s ease-in-out linear trans ;
+  }
+
+  @keyframes trans {
+    from {
+      bottom: -10px;
+    }
+    to {
+      bottom: 45px;
+    }
+  }
+  .winbtnconmenu .run {
+    width: 100%;
+    height: 7%;
+    background-color: transparent;
+    display: flex;
+    place-items: center;
+    place-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+
+  .winbtnconmenu .run:hover {
+    background-color: rgb(228, 228, 228);
+  }
+  .winbtnconmenu .run button {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: 0px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+  .winbtnconmenu .run button:hover {
+    background-color: rgb(228, 228, 228);
+  }
+
+  /* disk space need array[12.2,332] lineedid seqteri */
+
+  .winbtnconmenu .winvercm {
+    width: 100%;
+    height: 7%;
+    background-color: transparent;
+    display: flex;
+    place-items: center;
+    place-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+
+  .winbtnconmenu .winvercm:hover {
+    background-color: rgb(228, 228, 228);
+  }
+  .winbtnconmenu .winvercm button {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: 0px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+  .winbtnconmenu .winvercm button:hover {
+    background-color: rgb(228, 228, 228);
+  }
+  
+  .runwin {
+    height: 190px;
+    width: 380px;
+    background-color: #fff;
+    border-radius: 12px;
+    position: absolute;
+    bottom: 45px;
+    left: 10px;
+    overflow: hidden;
+    animation: 0.3s ease-in-out linear;
+    animation-name: slideIn;
+    -webkit-animation-name: slideIn;
+    display: none;
+  }
+  @-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+  }
+  
+  @keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+
+  @keyframes frombottomrun {
+    0% {
+      bottom: -10px;
+    }
+    100% {
+      bottom: 45px;
+    }
+  }
+  .runwin .iconwinrun img {
+    height: 23px;
+    width: 23px;
+    position: absolute;
+    top: 7px;
+    left: 9px;
+  }
+  .runwin .label {
+    position: absolute;
+    top: 9px;
+    left: 40px;
+  }
+  .runwin .innerimg img {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 50px;
+    left: 15px;
+  }
+  .runwin .innerlabel {
+    position: absolute;
+    top: 57px;
+    left: 66px;
+    font-size: 12px;
+  }
+  .runwin .openwindow {
+    position: absolute;
+    top: 115px;
+    left: 15px;
+  }
+  .runwin .input input{
+    width: 260px;
+    height: 15px;
+    margin-top: 115px;
+    margin-left: 75px;
+  }
+  .runwin .wincloserun {
+    height: 28px;
+    width: 28px;
+    background: transparent;
+    font-size: 27px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    place-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .runwin .wincloserun:hover {
+    background-color: red;
+  }
+  .runwin .runwinok {
+    height: 23px;
+    width: 60px;
+    background: transparent;
+    border: 0.5px solid grey;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 18px;
+    right: 190px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  .runwin .runwinok:hover {
+    background-color: rgb(214, 214, 214);
+  }
+  .runwin .runwinclose {
+    height: 23px;
+    width: 60px;
+    background: transparent;
+    border: 0.5px solid grey;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 18px;
+    right: 120px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  .runwin .runwinclose:hover {
+    background-color: rgb(214, 214, 214);
+  }
+  .runwin .runwinbrowse {
+    height: 23px;
+    width: 60px;
+    background: transparent;
+    border: 0.5px solid grey;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 18px;
+    right: 47px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  .runwin .runwinbrowse:hover {
+    background-color: rgb(214, 214, 214);
+  }
+  
+  .selectback {
+    height: 1000px;
+    width: 1370px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.897);
+    color: #ddd;
+    display: ruby;
+    align-items: center;
+    place-content: center;
+  }
+.selectback img {
+  cursor: pointer;
+}
+.selectback .closeselect {
+  font-size: 50px;
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 11px;
+}
+
+
+
+
+.winverwindow {
+  height: 450px;
+  width: 390px;
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  display: none;
+  position: absolute;
+}
+.winverwindow .titlebar {
+  height: 25px;
+  width: 100%;
+  background-color: rgb(233, 230, 230);
+  position: absolute;
+  top: 0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.winverwindow .titlebar .title {
+  font-size: 13px;
+  position: absolute;
+  left: 10px;
+  top: 3px;
+}
+.winverwindow .titlebar .closewinver {
+  height: 100%;
+  width: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: rgba(245, 222, 179, 0);
+  border-top-right-radius: 8px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.winverwindow .titlebar .closewinver:hover {
+  background-color: red;
+}
+.winverwindow .windows11ico img {
+  height: 70px;
+  width: 70px;
+  position: relative;
+  top: 50px;
+  left: -97px;
+}
+.winverwindow .win11textver {
+  font-size: 33px;
+  position: relative;
+  color: #1835d6;
+  top: -43px;
+  left: 35px;
+}
+
+.winverwindow .para {
+  min-width: 100px;
+  font-size: 12px;
+  position: relative;
+  top: -25px;
+  left: 15px;
+}
+.winverwindow .para a {
+  color: #0026ff;
+}
+
+.winverwindow button {
+  height: 22px;
+  width: 60px;
+  border: 0.2px solid rgb(62, 49, 240);
+  border-radius: 5px;
+  transition: all 0.2s ease;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+  
+}
+
+.winverwindow button:hover {
+  background-color: lightblue;
+}
+.settingswin {
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 735px;
+  width: 1366px;
+  animation: none;
+  display: none;
+}
+@keyframes winsetmin {
+  0% {
+    height: 700px;
+    width: 1366px;
+  }
+  50% {
+    height: 600px;
+    width: 1000px;
+    top: 50px;
+    left: 70px;
+  }
+  100% {
+    height: 500px;
+    width: 800px;
+    top: 50px;
+    left: 70px;
+  }
+}
+.settingswin .close {
+  background-color: transparent;
+  height: 24px;
+  width: 37px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 18px;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.settingswin .close:hover {
+  background: red;
+}
+.settingswin .maximize {
+  background-color: transparent;
+  height: 24px;
+  width: 37px;
+  position: absolute;
+  top: 0;
+  right: 35px;
+  font-size: 12px;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  
+}
+
+.settingswin .maximize:hover {
+  background: rgb(187, 186, 186);
+}
+.settingswin .minimize {
+  background-color: transparent;
+  height: 24px;
+  width: 37px;
+  position: absolute;
+  top: 0;
+  right: 72px;
+  font-size: 20px;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+.settingswin .minimize:hover {
+  background: rgb(189, 187, 187);
+}
+.hvmu {
+  position: absolute;
+  top: 25px;
+  height: 150px;
+  width: 300px;
+  background: rgb(248, 248, 248);
+  border-radius: 10px;
+  right: -15px;
+  display: none;
+}
+.settingswin .maximize:hover .hvmu {
+  display: none;
+}
+.hvmuback {
+  height: 768px;
+  width: 1366px;
+  background: red;
+}
+.hvmu .left {
+  height: 100px;
+  width: 60px;
+  position: absolute;
+  top: 23px;
+  left: 10px;
+  border-radius: 7px;
+  transition: all 0.4s ease;
+  background: transparent;
+  border: 1px solid grey;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.hvmu .left:hover {
+  background: #0077db;
+}
+.hvmu .right {
+  height: 100px;
+  width: 60px;
+  position: absolute;
+  top: 23px;
+  left: 78px;
+  border-radius: 7px;
+  transition: all 0.4s ease;
+  background: transparent;
+  border: 1px solid grey;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.hvmu .right:hover {
+  background: #0077db;
+}

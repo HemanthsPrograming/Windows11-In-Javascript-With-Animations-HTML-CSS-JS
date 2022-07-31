@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+body {
+    background-image: url("blue.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family:sans-serif;
+}
+#clock {
+    font-size: 75px;
+    width: 900px;
+    margin: 100px 200px;
+    text-align: center;
+    color: white;
+    font-weight: 10px;
+
+    }
+
+input {
+    font-size: 20px;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    background: transparent;
+    border: none;
+    width: 94%;
+    text-align: center;
+    margin:none;
+    font-weight: 20px;
+    color: white;
+} 
+button {
+    height: 800px;
+    width:100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: transparent;
+}  
+a {
+    font-size: 5000px;
+    position: fixed;
+    top: 0;
+    left: 0;
+} 
+    

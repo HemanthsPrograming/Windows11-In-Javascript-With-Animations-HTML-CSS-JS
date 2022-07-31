@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+    box-sizing: none;
+  }
+  
+  .bg-image {
+    /* The image used */
+    background-image: url("blue.jpg");
+    
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(15px);
+    
+    /* Full height */
+    height: 100%; 
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  img {
+      height: 130px;
+      width: 130px;
+      position: fixed;
+      top: 220px;
+      left: 620px;
+  }
+  input {
+      position: fixed;
+      top: 0;
+      top: 400px;
+      left: 590px;
+      height: 3%;
+      width: 13%;
+      border: none;
+      font-size: 12px;
+      background: white;
+      opacity: 80%;
+  }
+  button {
+      position: fixed;
+      top: 0;
+      left: 770px;
+      height: 25px;
+      top: 400px;
+      border: none;
+      background-color: gray;
+  }
+  input:hover {
+      opacity: 100%;
+  }
+  button:hover {
+      background: black;
+      color:white;
+  }
+  p {
+      position: fixed;
+      top: 350px;
+      left: 600px;
+      font-weight: 20px;
+      font-size: 20px;
+      color: #fff;
+
+  }
+
+ 

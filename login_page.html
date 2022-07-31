@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="shortcut icon" href="https://seeklogo.com/images/W/windows-11-icon-logo-6C39629E45-seeklogo.com.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="login_page_css.css">
+    <script src="login_page_sc.js"></script>
+</head>
+<body>
+    <center><p id="datename" class="datename" ></p></center><br>
+    <br><br>
+    <div class="datecl">
+    <center><p id="nameday" class="days"></p></center>
+    <center><p id="monthne" class="months"></p></center>
+    <center><p id="daynum" class="daysnum"></p></center>
+</div>
+
+
+<div class="imgage">
+    <img src="wifi.png" alt="" id="wifi">
+    <i class="fa fa-battery-full" id="bat" aria-hidden="true"></i>
+</div>
+<div class="backck" onclick="myOpenlog()">
+
+</div>
+<div class="backblur" id="backblur">
+    <br><br><br><br><br><br>
+    <center><img src="user.png" alt=""></center>
+    <center><p class="til">Hemanth's Development</p></center>
+    <center><input type="password" placeholder="Enter Password..." class="inputpas" id="inputcla"><i class="fa fa-long-arrow-right" onclick="myOpenload()" style="color: grey; position: absolute; top: 415px; left: 768px; cursor: pointer; transition: all 0.3s ease; display: block;" id="arrow"></i></a></center>
+    <center><img src="loader.gif" class="loaderimg" id="loaderimg" alt=""></center><br>
+    <center><span class="textl" id="textl">Welcome</span></center>
+    <div class="access">
+        <img src="wifi.png" alt="" id="wifibb">
+        <i class="fa fa-battery-full" id="batbb" aria-hidden="true"></i>
+    </div>
+</div>
+
+    <script>
+        const date = new Date();
+
+        let hour = date.getHours();
+
+        let minute = date.getMinutes();
+
+        const minnum = new Array(61);
+
+        minnum[0] = "00";
+        minnum[1] = "01";
+        minnum[2] = "02";
+        minnum[3] = "03";
+        minnum[4] = "04";
+        minnum[5] = "05"
+        minnum[6] = "06";
+        minnum[9] = "07";
+        minnum[7] = "06";
+        minnum[8] = "07";
+        minnum[9] = "08";
+        minnum[10] = "09";
+        minnum[11] = "10";
+        minnum[12] = "11";
+        minnum[13] = "12";
+        minnum[14] = "13";
+        minnum[15] = "14";
+        minnum[16] = "15";
+        minnum[17] = "16";
+        minnum[18] = "17";
+        minnum[19] = "18";
+        minnum[20] = "19";
+        minnum[21] = "20";
+        minnum[22] = "21";
+        minnum[23] = "22";
+        minnum[24] = "23";
+        minnum[25] = "24";
+        minnum[26] = "25";
+        minnum[27] = "26";
+        minnum[28] = "27";
+        minnum[29] = "28";
+        minnum[30] = "29";
+        minnum[31] = "30";
+        minnum[32] = "31";
+        minnum[33] = "32";
+        minnum[34] = "33";
+        minnum[35] = "34";
+        minnum[36] = "35";
+        minnum[37] = "36";
+        minnum[38] = "37";
+        minnum[39] = "38";
+        minnum[40] = "39";
+        minnum[41] = "40";
+        minnum[42] = "41";
+        minnum[43] = "42";
+        minnum[44] = "43";
+        minnum[45] = "44";
+        minnum[46] = "45";
+        minnum[47] = "46";
+        minnum[48] = "47";
+        minnum[49] = "48";
+        minnum[50] = "49";
+        minnum[51] = "50";
+        minnum[52] = "51";
+        minnum[53] = "52";
+        minnum[54] = "53";
+        minnum[55] = "54";
+        minnum[56] = "55";
+        minnum[57] = "56";
+        minnum[58] = "57";
+        minnum[59] = "58";
+        minnum[60] = "59";
+        minnum[61] = "60";
+
+
+        document.getElementById('datename').innerHTML= hour + ":" + date.getMinutes();
+        let day = date.getDay();
+
+        console.log(day);
+
+        const dayname = new Array(7);
+
+        dayname[0] = "Sunday";
+        dayname[1] = "Monday";
+        dayname[2] = "Tuesday";
+        dayname[3] = "Wednesday";
+        dayname[4] = "Thursday";
+        dayname[5] = "Friday";
+        dayname[6] = "Saturday"
+
+        
+        const monthname = new Array(12);
+
+        monthname[0] = "January";
+        monthname[1] = "February";
+        monthname[2] = "March";
+        monthname[3] = "April";
+        monthname[4] = "May";
+        monthname[5] = "June";
+        monthname[6] = "July";
+        monthname[7] = "August";
+        monthname[8] = "September";
+        monthname[9] = "October";
+        monthname[10] = "November";
+        monthname[11] = "December";
+
+        document.getElementById('nameday').innerHTML= dayname[date.getDay()] + ",";
+        document.getElementById('monthne').innerHTML= monthname[date.getMonth()];
+        document.getElementById('daynum').innerHTML= date.getDate();
+    
+        function myOpenlog() {
+            document.getElementById('wifi').style.display= "none";
+            document.getElementById('bat').style.display= "none";
+            document.getElementById('datename').style.display= "none";
+            setTimeout(function() {
+                document.getElementById('backblur').style.display= "block";
+            } , 1500);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://seeklogo.com/images/W/windows-11-icon-logo-6C39629E45-seeklogo.com.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style-windows-11-home.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="access.js"></script>
+    <title>WINDOWS 11 PRO</title>
+</head>
+<body>
+    <img src="edge.png" onclick="myEdgewin()" style="cursor: pointer; margin: 1rem 5rem; height: 30px; width:30px;">
+    <img src="shell32_4.ico" alt="" style="height: 30px; width:30px; margin:1rem; cursor:pointer;" onclick="myFileopen()">
+    <div id="contextMenu" class="context-menu" style="display: none"> 
+        <div class="menu"> 
+            <div class="cut">
+                <i class="fa fa-scissors" aria-hidden="true" title="Cut"></i>
+            </div>
+            <div class="copy">
+                <i class="fa fa-clone" title="Copy"></i>
+            </div>
+            <div class="clipboard">
+                <i class="fa fa-clipboard" title="Paste"></i>
+            </div>
+            <div class="delete">
+                <i class="fa fa-trash-o" title="Delete"></i>
+            </div>
+            <div class="share">
+                <i class="fa fa-share-square-o" aria-hidden="true" title="Share"></i>
+            </div>
+            <div class="line"></div>
+        </div> 
+        <div class="open" title="Open"><i class="fa fa-file-word-o" aria-hidden="true"></i><div class="opentext">Open</div></div>
+        <div class="openwith" title="Open With"><i class="fa fa-list" aria-hidden="true"></i><div class="openwithtext">Open With</div></div>
+        <div class="zip" title="Zip"><i class="fa fa-file-archive-o" aria-hidden="true"></i><div class="ziptext">Compress To Zip</div></div>
+    </div> 
+
+    <script>
+
+    </script>
+    <div id="myStart" class="startmenu">
+        <div class="start-content" id="startmenucont">
+          <span class="startmenuclose" style="display: none; color: transparent;">&times;</span><br>
+          <br>
+          <div class="pinned">
+              <b>Pinned</b>
+          </div>
+          <div class="allapps">
+              <button>All Apps ></button>
+          </div>
+          <div class="tiles">
+              <div class="edge" onclick="myEdgewin()">
+                  <img src="ICONS\Windows11X\Png 192\edge.png">
+                  <div class="etext">
+                      Microsoft Edge
+                  </div>
+              </div>
+              <div class="mail">
+                  <img src="ICONS\Windows11X\Png 192\email.png" alt="">
+                  <div class="mtext">
+                    Mail
+                </div>
+              </div>
+              <div class="calender">
+                  <img src="ICONS\Windows11X\Png 192\calendar.png" alt="">
+                  <div class="ctext">
+                      Calender
+                  </div>
+              </div>
+              <div class="store">
+                  <img src="ICONS\Windows11X\Png 192\store.png" alt="">
+                  <div class="stext">
+                      Store
+                  </div>
+              </div>
+              <div class="msword">
+                  <img src="ICONS\office 365\NewDesign_Office365_app_icon_package\PNG\128x128\Word_128x128.png" alt="">
+                  <div class="wtext">
+                      Word
+                  </div>
+              </div>
+              <div class="poweroff">
+                  <a href="shutdown.html"><i class="fa fa-power-off"></i></a>
+              </div>
+              
+          </div>
+        </div>
+</div>
+<div class="tskbar" id="taskbar">
+    <div class="startmenubtnback"></div>
+    <img src="win11.png" id="myStartmenu" oncontextmenu="myStartcon()" style="height: 36px; width:36px; margin:1rem 3rem; cursor:pointer;">
+</div>
+</div>
+    <div id="modal1"><a href="#">Close</a>This is the first modal</div>
+
+    <div class="edgewin" id="edgewinopen" style="display: none;">
+        <div class="close" onclick="myEdgeclose()" ><div class="iconx"><center>&times;</center></div></div>
+        <div class="maximize" onclick="myEdgemaximize()" ><div class="iconmx"><i class="fa fa-square-o" id="max" style="color: black;"></i></div></div>
+        <div class="minimize" onclick="myEdgeminimize()"><div class="iconm"><span style="color: black;">-</span></div></div>
+
+
+        <div class="tabs">
+            <div class="tab1" onclick="myTab1()">
+                <div class="tab1text">New Tab</div>
+            </div>
+            <div class="tab2" onclick="myTab2()">
+                <div class="tab2text">New Tab</div>
+            </div>
+            <div class="tab3" onclick="myTab3()">
+                <div class="tab3text">New Tab</div>
+            </div>
+            <div class="tab4" onclick="myTab4()">
+                <div class="tab4text">New Tab</div>
+            </div>
+            <div class="cover">     Microsoft Edge</div>
+            <div class="edgesearchbar">
+                <input type="text" placeholder="Search The Web ...">
+            </div>
+
+        </div>
+        <div class="tab1cont" id="tab1cont">
+            <iframe src="https://www.bing.com/?toWww=1&redig=83DFB37C4CE54A9987A6EE10AFAE93AC" frameborder="0" class="edgebrowser" ></iframe>
+        </div>
+        <div class="tab2cont" id="tab2cont">
+            <iframe src="https://www.bing.com/?toWww=1&redig=83DFB37C4CE54A9987A6EE10AFAE93AC" frameborder="0" class="edgebrowser" style="display: none;" ></iframe>
+        </div>
+        <div class="tab3cont" id="tab3cont">
+            <iframe src="https://www.bing.com/?toWww=1&redig=83DFB37C4CE54A9987A6EE10AFAE93AC" frameborder="0" class="edgebrowser"  style="display: none;" ></iframe>
+        </div>
+        <div class="tab4cont" id="tab4cont">
+            <iframe src="https://www.bing.com/?toWww=1&redig=83DFB37C4CE54A9987A6EE10AFAE93AC" frameborder="0" class="edgebrowser" style="display: none;"></iframe>
+        </div>
+     
+        
+
+    </div>
+
+<div class="edgerestored" id="restoreedge" style="display: none;">
+    <div class="closeedge" onclick="myEdgerestoreclose()" ><div class="iconrec"><center>&times;</center></div></div>
+    <div class="maximizeedge" onclick="myEdgerestoremax()" ><div class="iconrema"><i class="fa fa-square-o" >o</i></div></div>
+    <div class="minimizeedge" onclick="myEdgerestoremin()"><div class="iconremi"><span style="color: black;">-</span></div></div>
+    <div class="tabsr">
+        <div class="tab1r" onclick="myrTab1()">
+            <div class="tab1text">New Tab</div>
+        </div>
+        <div class="tab2r" onclick="myrTab2()">
+            <div class="tab2text">New Tab</div>
+        </div>
+        <div class="tab3r" onclick="myrTab3()">
+            <div class="tab3text">New Tab</div>
+        </div>
+        <div class="tab4r" onclick="myrTab4()">
+            <div class="tab4text">New Tab</div>
+        </div>
+        <div class="coverr">     Microsoft Edge</div>
+        <div class="edgesearchbarr">
+            <input type="text" placeholder="Search The Web ...">
+        </div>
+
+    </div>
+    <div class="tab1contr" id="tab1cont">
+        <iframe src="https://www.bing.com/?toWww=1&redig=83DFB37C4CE54A9987A6EE10AFAE93AC" frameborder="0" class="edgebrowser" ></iframe>
+    </div>
+    <div class="tab2contr" id="tab2cont">
+        <iframe src="https://www.bing.com/?toWww=1&redig=83DFB37C4CE54A9987A6EE10AFAE93AC" frameborder="0" class="edgebrowser" style="display: none;" ></iframe>
+    </div>
+    <div class="tab3contr" id="tab3cont">
+        <iframe src="https://www.bing.com/?toWww=1&redig=83DFB37C4CE54A9987A6EE10AFAE93AC" frameborder="0" class="edgebrowser"  style="display: none;" ></iframe>
+    </div>
+    <div class="tab4contr" id="tab4cont">
+        <iframe src="https://www.bing.com/?toWww=1&redig=83DFB37C4CE54A9987A6EE10AFAE93AC" frameborder="0" class="edgebrowser" style="display: none;"></iframe>
+    </div>
+ 
+
+</div>
+</div>
+
+<div class="filewin" id="filewin">
+    <div class="main">
+    <div class="close" onclick="myFileclose()" ><div class="iconx"><center>&times;</center></div></div>
+        <div class="maximize" onclick="myFilemaximize()" ><div class="iconmx"><i class="fa fa-square-o" id="max" style="color: black;"></i></div></div>
+        <div class="minimize" onclick="myFileminimize()"><div class="iconm"><span style="color: black;">-</span></div></div>
+        <div class="icon">
+            <img src="ICONS\windows_11_icon_themes_by_niivu_degj2bp\Windows 11 Icons Theme by niivu\Windows Icons\Explorer.ico" alt="">
+        </div>
+        <div class="label">File Explorer</div>
+        <div class="new"><span class="newbtn"><i class="fa fa-plus-circle"></i></span><span class="newtext">New</span></div>
+        <div class="line"></div>
+        <div class="cut" style="margin: 5rem;"><i class="fa fa-cut"></i></div>
+        <div class="copy" style="margin: 5rem;"><i class="fa fa-clone"></i></div>
+        <div class="paste" style="margin: 5rem;"><i class="fa fa-paste"></i></div>
+        <div class="rename" style="margin: 5rem;"><img src="ICONS\windows_11_for_windows_10_by_niivu_dellvsn\rename.png" alt=""></div>
+    </div>
+</div>
+<div class="winbtnconmenu" id="winconmenuone">
+    <div class="run">
+        <button onclick="winConrun()" accesskey="r">Run</button>
+    </div>
+    <div class="winvercm">
+        <button onclick="myOpenwinverwin()" accesskey="v">About</button>
+    </div>
+</div>
+<div class="runwin" id="runwindow">
+    <div class="iconwinrun">
+        <img src="ICONS\Windows 11-Main Icons\shell32_25.ico" alt="">
+    </div>
+    <div class="label">Run</div>
+    <div class="innerimg">
+        <img src="ICONS\Windows 11-Main Icons\shell32_25.ico" alt="">
+    </div>
+    <div class="innerlabel">
+       <b>Type the name of the program,folder, <br> document or internet
+        resource and windows will open it for you.</b> 
+    </div>
+    <div class="openwindow">Open</div>
+    <div class="input">
+        <input type="text">
+    </div>
+    <div class="wincloserun" onclick="myRunwinclosein()">&times;</div>
+    <button class="runwinok" onclick="myRunwinclosein()">Ok</button>
+    <button class="runwinclose" onclick="myRunwinclosein()">Close</button>
+    <button class="runwinbrowse" onclick="myRunwinclosein()">Browse</button>
+</div>
+<div class="selectback" id="closeselect" style="display: none;">
+    <br><br><br>
+    <center><div class="labelselect">Select Theme</div></center> <br><br><br>
+    <center><img title="Light Theme + Blue Addition" src="WALLPAPERS\4K\Wallpaper\Windows\WIN11.jpg" alt="" onclick="myChangewhite()" height="100px" width="150px"><br></center>
+    <center><img src="WALLPAPERS\4K\Wallpaper\Windows\img19_1920x1200.jpg" alt="" onclick="myChangeblack()" height="100px" width="150px"><br></center>
+    <center><img src="WALLPAPERS\Screen\img101.jpg" alt="" onclick="myChangeother()"  height="100px" width="150px"></center>
+    <center><img src="blue.jpg" alt="" onclick="myChangeblue()"  height="100px" width="150px"></center>
+    <center><img src="img103.jpg" alt="" onclick="myChangearil()"  height="100px" width="150px"></center>
+    <span class="closeselect" onclick="myCloseselectback()">&times;</span>
+</div>
+<button onclick="myChangebacksel()" style="position: absolute; top: 0; right: 400px;">Change Background</button>
+    <script src="script-win11-pro.js"></script>
+    <div class="winverwindow" id="windowsver">
+        <div class="titlebar">
+        <div class="title">About Windows</div>
+        <div class="closewinver" onclick="myWinvercl()">&times;</div>
+    </div>
+        <center><div class="windows11ico">
+            <img src="ASSETS\icon.png" alt="">
+        </div></center>
+        <center><p class="win11textver">Windows 11</p></center>
+        <center><div class="line1"></div></center>
+        <div class="para">
+            Hemanth's Development Windows <br>
+            Version 21H2 (OS Build 22000.282) <br>
+            Hemanth's Development. All rights reserved. <br>
+            <br><br><br>
+            The Windows 11 Home operating system  <br> and its user interface are
+            protected by trademark and other <br> pending or existing intellectual property <br>
+            rights in the India and other countries/regions 
+            <br><br><br><br>
+            This product is licensed under the <a href="#">Hemanth's Development license <br> Terms</a><br>
+            to:
+            windows11@hemanthsdevelopment.in
+        </div>
+        <button onclick="myOkwinver()">Ok</button>
+    </div>
+    <div class="settingswin" id="settingswindow">
+        <div class="close" onclick="mySetwincl()">&times;</div>
+        <div class="maximize"  onmouseover="myOpensetop()" onmouseout="myClosesetop()"  onclick="mySetwinmax()"><i class="fa fa-window-restore"></i>
+        </div>
+        <div class="minimize" onclick="mySetwinmin()">-</div>
+        <div class="hvmuback" onclick="mySethvmuclose()" id="hvmuback">
+        <div class="hvmu" id="hvmuset">
+            <div class="left" onclick="mySetwinleft()"></div>
+            <div class="right" onclick="mySetwinright()"></div>
+            <div class="left-side"></div>
+            <div class="ctr"></div>
+            <div class="right-side"></div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
